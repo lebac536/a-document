@@ -1,28 +1,124 @@
+
+
+/* //////
+FUCKING STUPID RESET
+////// */
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  font-family: sans-serif;
-  background: lightgray;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-h2 {
+
+/* //////
+FUCKING STUPID RESET
+////// */
+
+
+body {
+  font-family: "bakemono-variable",sans-serif;
+  background: #2e3338;
+}
+
+
+#title-page {
+ margin-top: 45%;
+  
+}
+
+
+
+#title-text {
+  color: #41af6f;
+  font-size: 14pt;
+  font-variation-settings: 'wght' 471, 'MONO' 920;
+  text-align: center;
+}
+
+#subtitle {
+  text-align: center;
+  color: white;
+  font-size: 12pt;
+  font-variation-settings: 'wght' 338, 'MONO' 920;
+}
+
+#green-rectangle {
+  position: absolute;
+  background-color: #41af6f;
+  height: 5.8in;
+  width: 0.25in;
+  padding-bottom: 1in;
+
+  /* help me lol idk why there is padding, how to have the green bleed? */
+}
+
+.page {
   break-before: page;
 }
 
+
+
 @media print {
   body {
-    background: white;
+    background: #2e3338;
   }
 }
 
 @page {
-  size: 5in 8in;
-  margin-top: 0.25in;
-  margin-bottom: 0.5in;
+  size: 5.3in 5.3in;
+  margin-top: 0.125in;
+  margin-bottom: 0.125in;
 }
 @page:left {
-  margin-left: 0.25in;
-  margin-right: 1in;
+  margin-left: 0.125in;
+  margin-right: 0.125in;
 }
 @page:right {
-  margin-left: 1in;
-  margin-right: 0.25in;
+  margin-left: .125in;
+  margin-right: 0.125in;
 }
