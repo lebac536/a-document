@@ -66,10 +66,6 @@ body {
 }
 
 
-#title-page {
- margin-top: 45%;
-  
-}
 
 
 
@@ -87,14 +83,60 @@ body {
   font-variation-settings: 'wght' 338, 'MONO' 920;
 }
 
+#page-letter-text {
+  position: absolute;
+  color: #41af6f;
+  font-size: 12pt;
+  font-variation-settings: 'wght' 300, 'MONO' 920;
+  z-index: 1;
+}
+
+#body-page {
+  width: 5.8in;
+  height: 5.8in;
+  /* background-color: bisque; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #green-rectangle {
   position: absolute;
   background-color: #41af6f;
-  height: 5.8in;
-  width: 0.25in;
-  padding-bottom: 1in;
+  height: 6in;
+  width: 0.125in;
+  
+}
 
-  /* help me lol idk why there is padding, how to have the green bleed? */
+#circle {
+  height: 1.35in;
+  width: 1.35in;
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid #41af6f;
+  position: absolute;
+}
+
+
+#letterbox {
+  display: flex;
+  width: 4.5in;
+  height: 4.5in;
+  /* background-color: aqua; */
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  /* help why is there space between the grid eek */
+
+}
+
+
+#letterimage {
+  display: inline-block;
+  width: 1.5in;
+  margin: 0%;
 }
 
 .page {
@@ -110,15 +152,15 @@ body {
 }
 
 @page {
-  size: 5.3in 5.3in;
-  margin-top: 0.125in;
-  margin-bottom: 0.125in;
+  size: 5.8in 5.8in;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 @page:left {
-  margin-left: 0.125in;
+  margin-left: 0;
   margin-right: 0.125in;
 }
 @page:right {
-  margin-left: .125in;
-  margin-right: 0.125in;
+  margin-left: 0in;
+  margin-right: 0in;
 }
