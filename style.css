@@ -92,8 +92,8 @@ body {
 }
 
 #body-page {
-  width: 5.8in;
-  height: 5.8in;
+  width: 5in;
+  height: 5in;
   /* background-color: bisque; */
   display: flex;
   align-items: center;
@@ -104,13 +104,13 @@ body {
   position: absolute;
   background-color: #41af6f;
   height: 6in;
-  width: 0.125in;
+  width: 0.25in;
   
 }
 
 #circle {
-  height: 1.35in;
-  width: 1.35in;
+  height: 1.15in;
+  width: 1.15in;
   background-color: white;
   border-radius: 50%;
   border: 3px solid #41af6f;
@@ -120,8 +120,8 @@ body {
 
 #letterbox {
   display: flex;
-  width: 4.5in;
-  height: 4.5in;
+  width: 4in;
+  height: 4in;
   /* background-color: aqua; */
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -135,7 +135,7 @@ body {
 
 #letterimage {
   display: inline-block;
-  width: 1.5in;
+  width: 1.33in;
   margin: 0%;
 }
 
@@ -152,9 +152,11 @@ body {
 }
 
 @page {
-  size: 5.8in 5.8in;
+  size: 5.0in 5.0in;
   margin-top: 0;
   margin-bottom: 0;
+  bleed: 0.25in;
+  marks: crop;
 }
 @page:left {
   margin-left: 0;
